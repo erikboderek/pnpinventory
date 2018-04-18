@@ -9,6 +9,9 @@ This script gets every field for every item everywhere. It's exhaustive. It does
 # get-sitecollectioninventory
 This script gets the item count and size of each list in every subsite. It also has timestamps and subsite level. When doing site inventories, I'd recommend using this script as it's less information to parse and is nicely summarized. 
 
+# Requirements
+You'll need to install PnP Powershell. Go here first: https://blog.kloud.com.au/2018/02/01/quick-start-guide-for-pnp-powershell/
+
 # Known Issues and Limitations
 ## Limitations
 A major limitation in all the scripts is as follows:
