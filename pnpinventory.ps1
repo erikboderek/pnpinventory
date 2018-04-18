@@ -40,10 +40,10 @@ write-host "Performing inventory on " $weburl -foregroundcolor Yellow
 	 #get all items
 	 #if this is the root, don't use web property. if subsite, use web
 	 if($weburl -eq $siteUrl){
-		$items = get-pnplistitem -list $list
+		$items = get-pnplistitem -list $list -PageSize 1000
 	 }
 	 else { 
-		$items = get-pnplistitem -list $list -Web $web
+		$items = get-pnplistitem -list $list -Web $web -PageSize 1000
 	 } 
 		#go through every item
 		foreach ($item in $items)
